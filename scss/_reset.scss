@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+html{
+    font-size: 62.5%;
+    @include responsive(1300px) {
+        font-size: 58%;
+    }
+    @include responsive(991px) {
+        font-size: 62.5%;
+    }
+}
+
+html,body{
+    overflow-x: hidden; 
+    /*Para não haver 'scrow' - barra lateral*/
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.border {
+    border: 2px solid red;
+    border-radius: 2px;
+}

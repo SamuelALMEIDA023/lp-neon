@@ -1,0 +1,220 @@
+footer {
+    background-color: $brand-blue;
+    padding-top: 4.9rem;
+    .top {
+        @include flex(row, center, space-between);
+        border-bottom: 1px solid hsla(199, 98%, 64%, 0.2);
+        padding-bottom: 4.8rem;
+        margin-bottom: 5.7rem;
+        .share {
+            display: flex;
+            align-items: center;
+            span {
+                color: #FFFF;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 125%; /* 17.5px */
+                opacity: 0.7;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                margin-left: 3rem;
+                li {
+                    &:not(:first-child) {
+                        margin-left: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        @include flex(row, flex-start, space-between); 
+        border-bottom: 1px solid hsla(199, 98%, 64%, 0.2);
+        padding-bottom: 6.2rem;
+        margin-bottom: 3.9rem;
+        nav {
+            @include flex(row, flex-start, space-between);
+            width: 100%;
+            max-width: 86rem;
+            .item {
+                strong {
+                    color: #FFF;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    line-height: 125%; /* 20px */
+                    display: inline-block; /* pois está com um display: inline; */
+                    margin-bottom: 2.5rem;
+                }
+            }
+            ul {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 2.9rem;
+                    }
+                    a {
+                        color: #FFF;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: normal;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }  
+        .btns {
+            width: 100%;
+            max-width: 28rem;
+            button {
+                width: 100%;
+                height: 76px;
+                background-color: rgba(0, 164, 240, 0.23);
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                padding-left: 2.5rem;
+                &:not(:last-child) {
+                    margin-bottom: 2.4rem;
+                }
+                .info {
+                    margin-left: 2.4rem;
+                    strong {
+                        display: block; /* para subir o texto acima */
+                        text-align: left;
+                        color: #FFF;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        line-height: 150%; /* 21px */
+                    }
+                    span {
+                        display: block;
+                        color: #FFF;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+                }
+            } 
+        }
+    }
+    .msg {
+        display: flex;
+        align-items: flex-start; /* para fixar na posição */
+        border-bottom: 4px solid $brand-yellow;
+        padding-bottom: 3.4rem;
+        .icon {
+            font-size: 1.8rem;
+        }
+        p {
+            width: 100%;
+            max-width: 66rem;
+            color: #FFF;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 150%; /* 21px */
+            margin-left: 2.5rem;
+            opacity: 0.8;
+        }
+    } 
+    @include responsive(1050px) {
+        .main {
+            nav {
+                max-width: 76rem;
+            }
+        }
+    }
+    @include responsive(991px) {
+        .main {
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 3.6rem;
+            nav {
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .item {
+                    width: 33%;
+                    margin-bottom: 5rem;
+                }
+            }
+            .btns {
+                position: absolute;
+                bottom: 140px;
+                right: 0;
+            }
+        }
+        .msg {
+            flex-direction: column;
+            align-items: center;
+            p {
+                margin-left: 0;
+                text-align: center;
+                margin-top: 1rem; 
+            }
+        }
+    }  
+    @include responsive(600px) {
+        .main {
+            margin-bottom: 3rem;
+            .btns {
+                max-width: 25rem;
+                button {
+                    img {
+                        display: none;
+                    }
+                    .info {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(480px) {
+        .top {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 4.3rem;
+            margin-bottom: 5.2rem;
+            .share {
+                flex-direction: column;
+                margin-top: 3.2rem;
+                ul {
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            }
+            
+        }
+        .main {
+            nav {
+                .item {
+                    width: 50%;
+                    margin-bottom: 5.3rem;
+                }
+            }
+            .btns {
+                bottom: 0;
+                position: relative; /*Alterar o position: absolute;*/
+                max-width: 100%; /*Ocupar a tela inteira*/
+                button {
+                    padding-left: 0;
+                    justify-content: center;
+                    .info {
+                        strong,
+                        span {
+                           display: block;
+                           text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
