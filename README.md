@@ -2,7 +2,7 @@
 
 # lp-neon
  Projeto landing page de um banco digital onde inicializei SASS como uma nova funicionalidade para 
- o projeto e JavaScript para interação com o usuário. ![CodeBoost](https://codeboost.com.br/)
+ o projeto e JavaScript para interação com o usuário. [CodeBoost](https://codeboost.com.br/)
 
  # Bibliotecas JS usadas
  * Para as animações [Animate On Scroll Library](https://michalsnik.github.io/aos/)
