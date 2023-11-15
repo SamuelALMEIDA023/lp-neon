@@ -13,3 +13,8 @@
 Resultado final: https://lp-neon-samuel.netlify.app/
 
  ![Image](C:\Users\milit\Downloads\background-lp.png)
+
+## Aprendizados
+Foi meu primeiro contato com o SASS e tenho que admitir que subestimei no inicio, mas agora não me vejo mais sem, também foi meu primeiro contato com bibliotecas/apis em geral ao menos essas utilizadas neste projeto foram de fácil implementação. 
+
+A criação de vários tipos de media para que o projeto fique responsivo se mostrou bem complexo, a forma como o projeto foi construído principalmente no HTML, separadando cada seção de forma que fique fácil manter foi determinante para fazer um bom responsivo.
