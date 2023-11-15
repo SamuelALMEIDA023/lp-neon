@@ -8,4 +8,8 @@
  * Para as animações [Animate On Scroll Library](https://michalsnik.github.io/aos/)
 
  * Para o slider [Swiper The Most Modern Mobile Touch Slider](https://swiperjs.com/)
- 
+
+# Resultado
+Resultado final: https://lp-neon-samuel.netlify.app/
+
+ ![Cover](C:\Users\milit\Downloads\background-lp.png)
