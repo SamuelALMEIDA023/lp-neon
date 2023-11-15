@@ -12,4 +12,4 @@
 # Resultado
 Resultado final: https://lp-neon-samuel.netlify.app/
 
- ![Cover](C:\Users\milit\Downloads\background-lp.png)
+ ![Image](https://github.com/SamuelALMEIDA023/background-lp.png)
