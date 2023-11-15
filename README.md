@@ -12,7 +12,7 @@
 # Resultado
 Resultado final: https://lp-neon-samuel.netlify.app/
 
- ![Image](C:\Users\milit\Downloads\background-lp.png)
+ ![image]("C:\Users\milit\Downloads\image\background-lp.png")
 
 ## Aprendizados
 Foi meu primeiro contato com o SASS e tenho que admitir que subestimei no inicio, mas agora não me vejo mais sem, também foi meu primeiro contato com bibliotecas/apis em geral ao menos essas utilizadas neste projeto foram de fácil implementação. 
